@@ -1,6 +1,6 @@
 {
     "name": "taoti/drupal-project",
-    "description": "Builds a Drupal Project",
+    "description": "Builds a Drupal Project with development tools and our theme.",
     "type": "project",
     "license": "GPL-2.0",
     "authors": [
@@ -16,10 +16,11 @@
             "url": "https://packagist.drupal-composer.org"
         },
         {
-            "type": "drupal-theme",
+            "type": "package",
             "package": {
                 "name": "taoti/taoti_bootstrap",
                 "version": "0.1",
+                "type": "drupal-custom-theme",
                 "source": {
                     "url": "https://github.com/Taoti/taoti_bootstrap",
                     "type": "git",
@@ -48,6 +49,7 @@
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
             "web/drush/commands/{$name}": ["type:drupal-drush"]
         }
     }
