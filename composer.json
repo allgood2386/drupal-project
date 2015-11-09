@@ -16,11 +16,11 @@
         {
             "type": "package",
             "package": {
-                "name": "taoti/taoti_bootstrap",
+                "name": "taoti/taoti-bootstrap",
                 "version": "0.1",
                 "type": "drupal-custom-theme",
                 "source": {
-                    "url": "https://github.com/Taoti/taoti_bootstrap",
+                    "url": "https://github.com/Taoti/taoti-bootstrap",
                     "type": "git",
                     "reference": "origin/master"
                 },
@@ -34,13 +34,12 @@
         }
     ],
     "require": {
-        "taoti/installers": "1.0.1",
         "drupal/core": "8.0.*",
         "drush/drush": "8.*",
         "drupal/console": "~0.8",
         "drupal/devel": "8.1.*@dev",
         "drupal/token": "8.1.*@dev",
-        "taoti/taoti_bootstrap": "0.1"
+        "taoti/taoti-bootstrap": "0.1"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
