@@ -16,7 +16,7 @@
             "url": "https://packagist.drupal-composer.org"
         },
         {
-            "type": "package",
+            "type": "drupal-theme",
             "package": {
                 "name": "taoti/taoti_bootstrap",
                 "version": "0.1",
