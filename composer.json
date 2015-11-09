@@ -18,10 +18,14 @@
             "package": {
                 "name": "taoti/taoti_bootstrap",
                 "version": "0.1",
+                "type": "drupal-custom-theme",
                 "source": {
                     "url": "https://github.com/Taoti/taoti_bootstrap",
                     "type": "git",
                     "reference": "origin/master"
+                },
+                "extra": {
+                    "installer-name": "drupal-custom-theme"
                 }
             },
             "extra": {
@@ -30,7 +34,7 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.0.20",
+        "taot/installers": "^1.0.20",
         "drupal/core": "8.0.*",
         "drush/drush": "8.*",
         "drupal/console": "~0.8",
