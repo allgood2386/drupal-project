@@ -3,13 +3,11 @@
     "description": "Builds a Drupal Project with development tools and our theme.",
     "type": "project",
     "license": "GPL-2.0",
-    "authors": [
-        {
-            "name": "Richard Allen",
-            "email": "rallen@taoti.com",
-            "role": "Developer"
-        }
-    ],
+    "authors": [{
+        "name": "Richard Allen",
+        "email": "rallen@taoti.com",
+        "role": "Developer"
+    }],
     "repositories": [
         {
             "type": "composer",
@@ -20,12 +18,14 @@
             "package": {
                 "name": "taoti/taoti_bootstrap",
                 "version": "0.1",
-                "type": "drupal-custom-theme",
                 "source": {
                     "url": "https://github.com/Taoti/taoti_bootstrap",
                     "type": "git",
                     "reference": "origin/master"
                 }
+            },
+            "extra": {
+                "installer-name": "drupal-custom-theme"
             }
         }
     ],
