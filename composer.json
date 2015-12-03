@@ -20,7 +20,8 @@
         "drush/drush": "8.*",
         "taoti/taoti-bootstrap": "3.*",
         "drupal/console": "dev-master",
-        "drupal/devel": "8.1.*@dev"
+        "drupal/devel": "8.1.*@dev",
+        "drupal/composer_manager": "8.1.*@dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
