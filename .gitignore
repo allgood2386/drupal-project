@@ -2,9 +2,9 @@
 drush/contrib
 vendor
 web/core
-web/modules/contrib
-web/themes/contrib
-web/profiles/contrib
+web/modules
+web/themes
+web/profiles
 
 # Ignore Drupal's file directory
 web/sites/default/files
