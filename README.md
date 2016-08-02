@@ -86,3 +86,22 @@ To add a patch to drupal module foobar insert the patches section in the extra s
     }
 }
 ```
+
+### What are the deployment steps?
+
+Deployments have a few extra steps to get the correct library and dependency updates.
+You can automate this by using [Githooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+or your favorite deployment tool. An example of what the basic deployment steps are can be found 
+in `scripts/deploy/deploy.sh`. The basic steps are as follows, the paths may change depending on environment:
+
+*  `cd /path/to/webroot/`
+*  Use `ls` to check for the preseence of the `./.vendor` directory. That means you are are the correct folder.
+*  `composer install` Here is where you install/update your libraries.
+*  `cd ./web/` now we go to the webroot run our rush commands. Drush may be installed on the device, but the safe
+version of drush to use will be the one packaged in with .vendor so we run drush like this:
+*  ```
+   ../vendor/bin/drush updb -y # run update.php
+   ../vendor/bin/drush cr all # cache rebuild
+   ../vendor/bin/drush cim git -y # configuration import
+   ../vendor/bin/drush cr all # last cache rebuild
+   ```
